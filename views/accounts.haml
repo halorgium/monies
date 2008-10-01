@@ -1,0 +1,7 @@
+%h1
+  Accounts in
+  = @file.path
+
+- @accounts.each do |a|
+  %a{:href => "/#{@file.sha1}/#{a.number}"}
+    = a.number
